@@ -1,4 +1,5 @@
 import React from "react";
+import Products from "./Products";
 
 const NavBar = () => {
     return (
@@ -14,7 +15,7 @@ const NavBar = () => {
                         <a className="nav-link" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Productos</a>
+                        <a className="nav-link" href="{./Map}">Productos</a>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">Nosotros</a>
