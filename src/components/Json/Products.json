@@ -1,0 +1,87 @@
+[
+    {
+        "id":0,
+        "name":"Chomba DC",
+        "price":3500,
+        "quantity":99,
+        "image":"../images/ChombaDc.jpg",
+        "description":"Chomba DCshoes",
+        "type": "productos",
+        "stock": 6
+    },
+
+    {
+        "id":1,
+        "name":"Campera Adidas",
+        "price":5500,
+        "quantity":99,
+        "image":"../images/AdidasVintage.jpg",
+        "description":"Adidas Vintage",
+        "type": "productos",
+        "stock": 6
+    },
+
+    {
+        "id":2,
+        "name":"Remera Cool",
+        "price":3500,
+        "quantity":99,
+        "image":"../images/Cool.jpg",
+        "description":"Remera Cool",
+        "stock": 6
+
+    },
+
+    {
+        "id":3,
+        "name":"Jogger OffWhite",
+        "price":6500,
+        "quantity":99,
+        "image":"../images/OffWhite.webp",
+        "description":"Jogger OffWhite",
+        "type": "productos",
+        "stock": 6
+    },
+
+    {
+        "id":4,
+        "name":"Buzo Reflex",
+        "price":3500,
+        "quantity":99,
+        "image":"../images/Reflex.jpg",
+        "description":"Buzo Reflex",
+        "type": "productos",
+        "stock": 6
+    },
+    
+    {
+        "id":5,
+        "name":"Remera",
+        "price":2500,
+        "quantity":99,
+        "image":"../images/Remera.jpg",
+        "description":"Remera Japonesa",
+        "type": "productos",
+        "stock": 6
+        },
+    {
+        "id":6,
+        "name":"Chombas",
+        "price":2000,
+        "quantity":99,
+        "image":"../images/chombas.jpg",
+        "description":"chombas 2x1",
+        "type": "cursos",
+        "stock": 6
+    },
+    {
+        "id":7,
+        "name":"Billeteras",
+        "price":700,
+        "quantity":99,
+        "image":"../images/Billeteras.jpg",
+        "description":"Billeteras StreetWear",
+        "type": "cursos",
+        "stock": 6
+    }
+]

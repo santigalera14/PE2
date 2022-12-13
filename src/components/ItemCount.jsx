@@ -1,44 +1,22 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { HStack, Button, Text } from "@chakra-ui/react";
 
+const ItemCount = ({ initial, stock, onAdd }) => {
 
-const ItemCount = ({ stock }) => {
-    const [counter, setCounter] = useState(1);
-    const oneMore = () => {
+    const [count, setCount] = useState(initial)
 
-        if (counter < stock) {
-            setCounter(counter + 1);
-        }
-    }
-    const oneLess = () => {
-        if (counter > 0) {
-            setCounter(counter - 1);
-        }
-    }
-    const onAdd = () => {
-        if (counter > 0) {
-            console.log("Agregaste " + counter + " al carrito!!!")
-        } if (counter <= 0) {
-            console.log("El campo de producto no puede ser 0")
-        }
-    }
-    return (
-        <div>
-            <div className="row mb-2">
-                <div className="col-md-5 text-center">
-                    <div className="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" className="btn btn-outline-primary" onClick={oneLess}  >-</button>
-                        <button type="button" className="btn btn-outline-primary">{counter}</button>
-                        <button type="button" className="btn btn-outline-primary" onClick={oneMore}  >+</button>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-5 text-center">
-                    <button type="button" className="btn btn-outline-primary" onClick={onAdd}>Agregar al Carrito</button>
-                </div>
-            </div>
+    const increase =  () => count < stock && setCount(count + 1)
+    const decrease = () => count > initial && setCount(count - 1)
 
-        </div>
+    return(
+        <HStack>
+            <Button variant='ghost' colorScheme='red' size='sm' onClick={decrease}>-</Button>
+            <Text>{count}</Text>
+            <Button variant='ghost' colorScheme='red' size='sm' onClick={increase}>+</Button>
+            <Button colorScheme='red' size='sm'>Agregar al Carrito</Button>
+        </HStack>
     )
 }
+
+
 export default ItemCount;

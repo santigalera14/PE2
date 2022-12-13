@@ -1,5 +1,4 @@
 import React from "react";
-import Products from "./Products";
 
 const NavBar = () => {
     return (
@@ -12,10 +11,10 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a className="nav-link" aria-current="page" href="{./App}">Inicio</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="{./Map}">Productos</a>
+                        <a className="nav-link" href="{./components/Products}">Productos</a>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">Nosotros</a>

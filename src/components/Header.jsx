@@ -1,16 +1,12 @@
 import React from "react";
-import CartWidget from "./CartWidget";
 import NavBar from "./NavBar";
 
 const Header = () => {
     return (
-        <div className="container">
+        <div className="container bg-warning ">
             <div className="row">
                 <div className="col-md-6">
                     <NavBar />
-                </div>
-                <div className="col-md-6 d-flex aling-items-center justify-content-end">
-                    <CartWidget />
                 </div>
             </div>
         </div>
